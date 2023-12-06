@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(11, 15, 46);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+#alert-container{
+    color: rgb(255, 30, 30);
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2{
+    letter-spacing: 2px;
+}
+
+#registers-container{
+    display: flex;
+    font-size: 25px;
+    width: 250px;
+    justify-content: space-between;
+    color: rgb(147, 193, 253);
+    margin: 50px 0;
+    padding: 20px;
+    border-bottom: 2px solid rgb(147, 193, 253);
+}
+
+#registers-container div input{
+    width: 30px;
+    padding: 2px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+#registers-container div input:disabled{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+button{
+    font-size: 18px;
+    padding: 5px 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(36, 126, 245);
+    color: white;
+    border: none;
+}
+
+.options{
+    font-size: 18px;
+}
+
+#specify-registers-container{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specify-registers-select{
+    margin-top: 10px;
+    width: 50px;
+    padding: 2px;
+    font-size: 18px;
+}
+
+#operations-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+#confirm-registers{
+    margin-top: 30px;
+}

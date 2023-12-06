@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projekt - ask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alert-container"></div>
+    <div><h2>KAŻDY REJESTR MUSI SIĘ SKŁADAĆ Z 2 ZNAKÓW I MUSI BYĆ W SYSTEMIE SZESNASTKOWYM</h2></div>
+    <div id="registers-container">
+        <div>
+            AH<input type="text" class="hex_code" name="AH" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            BH<input type="text" class="hex_code" name="BH" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            CH<input type="text" class="hex_code" name="CH" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            DH<input type="text" class="hex_code" name="DH" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+        </div>
+        <div>
+            AL<input type="text" class="hex_code" name="AL" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            BL<input type="text" class="hex_code" name="BL" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            CL<input type="text" class="hex_code" name="CL" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+            DL<input type="text" class="hex_code" name="DL" pattern="[0-9a-fA-F]+" minlength="2" maxlength="2"><br>
+        </div>
+    </div>
+    <button id="register-setting-btn">Zatwierdź</button>
+    <div id="operations-container">
+        <select id="operations" class="options">
+            <option value="INC">INC</option>
+            <option value="DEC">DEC</option>    
+            <option value="NOT">NOT</option>
+            <option value="NEG">NEG</option>
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="XOR">XOR</option>
+            <option value="ADD">ADD</option>
+            <option value="SUB">SUB</option>
+            <option value="MOV">MOV</option>
+            <option value="XCHG">XCHG</option>
+            <option value="MUL">MUL</option>
+            <option value="IMUL">IMUL</option>
+            <option value="DIV">DIV</option>
+            <option value="IDIV">IDIV</option>
+        </select>
+        <div id="specify-registers-container">
+            <select class="specify-registers-select options">
+                <option value="AH">AH</option>
+                <option value="BH">BH</option>
+                <option value="CH">CH</option>
+                <option value="DH">DH</option>
+                <option value="AL">AL</option>
+                <option value="BL">BL</option>
+                <option value="CL">CL</option>
+                <option value="DL">DL</option>
+            </select>
+            <select class="specify-registers-select options">
+                <option value="AH">AH</option>
+                <option value="BH">BH</option>
+                <option value="CH">CH</option>
+                <option value="DH">DH</option>
+                <option value="AL">AL</option>
+                <option value="BL">BL</option>
+                <option value="CL">CL</option>
+                <option value="DL">DL</option>
+            </select>
+        </div>
+        <button id="confirm-registers">Zatwierdź operację</button>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
