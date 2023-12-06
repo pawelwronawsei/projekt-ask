@@ -29,13 +29,11 @@ registers.forEach((register) => {
     }, false);
 });
 
-//po zatwierdzeniu wpisanych przez użytkownika rejestrów
 confirmRegistersBtn.addEventListener('click', () => {
     confirmRegisters();
     hideShowOperationInputs('INC');
 });
 
-//po zmianie operacji jaką chce wykonać użytkownik
 operationsSelect.addEventListener('change', (e) => hideShowOperationInputs(e.target.value));
 
 //po zatwierdzeniu operacji i wybraniu rejestru
